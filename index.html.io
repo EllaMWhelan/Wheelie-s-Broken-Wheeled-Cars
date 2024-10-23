@@ -1,13 +1,5 @@
 # GPA Calculator
 Welcome to the GPA calculator!
-Enter the letter grade for the course (or type 'done' to finish): A
-Enter the credit hours for the course with grade A: 3
-Enter the letter grade for the course (or type 'done' to finish): B+
-Enter the credit hours for the course with grade B+: 4
-Enter the letter grade for the course (or type 'done' to finish): C
-Enter the credit hours for the course with grade C: 2
-Enter the letter grade for the course (or type 'done' to finish): done
-Your GPA is: 3.11
 
 def letter_to_gpa(grade):
     """Converts a letter grade to the GPA value."""
