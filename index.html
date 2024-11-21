@@ -7,23 +7,54 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             background-color: #f9f9f9;
-            cursor: pointer;
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars during animation */
         }
         #message {
             display: none;
+            text-align: center;
             font-size: 24px;
             color: #333;
+            margin-top: 20px;
+        }
+        .animation-container {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: flex;
+            align-items: center;
+            transform: translateY(-50%);
+            animation: move-across 5s linear infinite;
+        }
+        .a-plus {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FF4500; /* Bright orange-red for the A+ */
+            margin-right: 10px;
+        }
+        .pencil {
+            width: 50px;
+            height: auto;
+        }
+        @keyframes move-across {
+            from {
+                left: -100px;
+            }
+            to {
+                left: 110%;
+            }
         }
     </style>
 </head>
 <body onclick="showMessage()">
     <div id="message">Welcome to Ella Whelan's GPA Calculator!</div>
+
+    <!-- Animation -->
+    <div class="animation-container">
+        <span class="a-plus">A+</span>
+        <img class="pencil" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Yellow_pencil.svg/512px-Yellow_pencil.svg.png" alt="Pencil">
+    </div>
 
     <script>
         function showMessage() {
