@@ -20,7 +20,6 @@
             margin-top: 50px;
         }
         #message {
-            display: none;
             text-align: center;
             font-size: 24px;
             color: #f5f5dc; /* Creme */
@@ -55,21 +54,14 @@
         }
     </style>
 </head>
-<body onclick="showMessage()">
+<body>
     <div id="welcome-message">Welcome to Ella Whelan's GPA Calculator!</div>
     <div id="message">Click anywhere to start calculating your GPA!</div>
 
     <!-- Animation -->
     <div class="animation-container">
         <span class="a-plus">A+</span>
-        <img class="pencil" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Yellow_pencil.svg/512px-Yellow_pencil.svg.png" alt="Pencil">
+        <img class="pencil" src="pencil.png" alt="Pencil">
     </div>
-
-    <script>
-        function showMessage() {
-            const message = document.getElementById('message');
-            message.style.display = 'block';
-        }
-    </script>
 </body>
 </html>
