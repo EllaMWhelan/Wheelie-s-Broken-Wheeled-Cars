@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella Whelan's GPA Calculator</title>
-    <!-- Added Bebas Neue font -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,21 +11,27 @@
             background-color: #000033; /* Darker blue */
             color: #f5f5dc; /* Creme */
             margin: 0;
-            overflow: hidden; /* Prevent scrollbars during animation */
+            padding: 0;
+            overflow-y: auto; /* Enable vertical scrolling */
         }
-        #welcome-message, #title {
-            font-family: 'Bebas Neue', sans-serif; /* Retro font */
+        #title {
+            font-family: 'Pacifico', cursive; /* 70's style font */
+            font-size: 48px; /* Title size adjustment */
+            font-weight: bold;
+            color: #f5f5dc; /* Creme */
+            text-align: center;
+            margin-top: 50px;
+        }
+        #welcome-message {
+            font-family: 'Pacifico', cursive; /* 70's style font */
             font-size: 32px;
             font-weight: bold;
             color: #f5f5dc; /* Creme */
             text-align: center;
-        }
-        #title {
-            font-size: 48px; /* Title size adjustment */
-            margin-top: 50px;
+            margin-top: 30px;
         }
         .animation-container {
-            position: absolute;
+            position: relative;
             top: 50%;
             left: 0;
             display: flex;
