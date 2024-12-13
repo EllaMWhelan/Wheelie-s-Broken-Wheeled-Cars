@@ -7,15 +7,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #001f3f; /* Dark navy blue */
+            color: #f5f5dc; /* Creme */
             margin: 0;
             overflow: hidden; /* Prevent scrollbars during animation */
+        }
+        #welcome-message {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #f5f5dc; /* Creme */
+            margin-top: 50px;
         }
         #message {
             display: none;
             text-align: center;
             font-size: 24px;
-            color: #333;
+            color: #f5f5dc; /* Creme */
             margin-top: 20px;
         }
         .animation-container {
@@ -48,7 +56,8 @@
     </style>
 </head>
 <body onclick="showMessage()">
-    <div id="message">Welcome to Ella Whelan's GPA Calculator!</div>
+    <div id="welcome-message">Welcome to Ella Whelan's GPA Calculator!</div>
+    <div id="message">Click anywhere to start calculating your GPA!</div>
 
     <!-- Animation -->
     <div class="animation-container">
