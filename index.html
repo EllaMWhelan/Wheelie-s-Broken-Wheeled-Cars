@@ -37,13 +37,13 @@
             display: flex;
             align-items: center;
             transform: translateY(-50%);
-            animation: move-across 5s linear infinite;
         }
         .dancing-image {
             width: 100px; /* Adjust the size of the image */
             height: auto;
             margin-right: 20px;
             background-color: transparent; /* Ensure no background color */
+            animation: move-across 5s linear infinite;
         }
         @keyframes move-across {
             from {
@@ -51,6 +51,11 @@
             }
             to {
                 left: 110%;
+            }
+        }
+        @media (max-width: 600px) {
+            .animation-container {
+                top: 70%; /* Push animation lower on smaller screens */
             }
         }
     </style>
@@ -61,11 +66,11 @@
 
     <!-- Animation -->
     <div class="animation-container">
-        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
-        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
-        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
-        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
-        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
+        <img src="/mnt/data/a-dancing-dancing-a-unscreen.gif" class="dancing-image" style="animation-delay: 0s;" alt="Dancing A GIF">
+        <img src="/mnt/data/a-dancing-dancing-a-unscreen.gif" class="dancing-image" style="animation-delay: 0.5s;" alt="Dancing A GIF">
+        <img src="/mnt/data/a-dancing-dancing-a-unscreen.gif" class="dancing-image" style="animation-delay: 1s;" alt="Dancing A GIF">
+        <img src="/mnt/data/a-dancing-dancing-a-unscreen.gif" class="dancing-image" style="animation-delay: 1.5s;" alt="Dancing A GIF">
+        <img src="/mnt/data/a-dancing-dancing-a-unscreen.gif" class="dancing-image" style="animation-delay: 2s;" alt="Dancing A GIF">
     </div>
 </body>
 </html>
