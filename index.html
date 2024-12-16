@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella Whelan's GPA Calculator</title>
-    <!-- Added Bebas Neue font -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'BD Retrocentric';
+            src: url('fonts/BDRetrocentric.woff2') format('woff2'),
+                 url('fonts/BDRetrocentric.woff') format('woff'),
+                 url('fonts/BDRetrocentric.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'BD Retrocentric', Arial, sans-serif; /* Fallback fonts */
             background-color: #000033; /* Darker blue */
             color: #f5f5dc; /* Creme */
             margin: 0;
             overflow: hidden; /* Prevent scrollbars during animation */
         }
         #welcome-message, #title {
-            font-family: 'Bebas Neue', sans-serif; /* Retro font */
+            font-family: 'BD Retrocentric', sans-serif;
             font-size: 32px;
             font-weight: bold;
-            color: #f5f5dc; /* Creme */
+            color: #f5f5dc;
             text-align: center;
         }
         #title {
-            font-size: 48px; /* Title size adjustment */
+            font-size: 48px;
             margin-top: 50px;
         }
         .animation-container {
             position: absolute;
-            top: 50%;
+            top: 60%; /* Lower position */
             left: 0;
             display: flex;
             align-items: center;
-            transform: translateY(-50%);
             animation: move-across 5s linear infinite;
         }
         .dancing-image {
-            width: 100px; /* Adjust the size of the image */
+            width: 100px;
             height: auto;
             margin-right: 20px;
-            background-color: transparent; /* Ensure no background color */
+            background-color: transparent;
         }
         @keyframes move-across {
             from {
