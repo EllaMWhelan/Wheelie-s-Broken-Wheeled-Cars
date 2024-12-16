@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella Whelan's GPA Calculator</title>
+    <!-- Added Bebas Neue font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
@@ -11,43 +13,37 @@
             background-color: #000033; /* Darker blue */
             color: #f5f5dc; /* Creme */
             margin: 0;
-            padding: 0;
-            overflow-y: auto; /* Enable vertical scrolling */
+            overflow: hidden; /* Prevent scrollbars during animation */
         }
-        #title {
-            font-family: 'Pacifico', cursive; /* 70's style font */
-            font-size: 48px; /* Title size adjustment */
-            font-weight: bold;
-            color: #f5f5dc; /* Creme */
-            text-align: center;
-            margin-top: 50px;
-        }
-        #welcome-message {
-            font-family: 'Pacifico', cursive; /* 70's style font */
+        #welcome-message, #title {
+            font-family: 'Bebas Neue', sans-serif; /* Retro font */
             font-size: 32px;
             font-weight: bold;
             color: #f5f5dc; /* Creme */
             text-align: center;
-            margin-top: 30px;
+        }
+        #title {
+            font-size: 48px; /* Title size adjustment */
+            margin-top: 50px;
         }
         .animation-container {
-            position: relative;
-            top: 200px; /* Lower the animation below the title and welcome message */
+            position: absolute;
+            top: 50%;
             left: 0;
             display: flex;
             align-items: center;
+            transform: translateY(-50%);
+            animation: move-across 5s linear infinite;
         }
         .dancing-image {
-            position: relative;
             width: 100px; /* Adjust the size of the image */
             height: auto;
             margin-right: 20px;
             background-color: transparent; /* Ensure no background color */
-            animation: move-across 5s linear infinite;
         }
         @keyframes move-across {
             from {
-                left: -150px;
+                left: -100px;
             }
             to {
                 left: 110%;
@@ -61,11 +57,11 @@
 
     <!-- Animation -->
     <div class="animation-container">
-        <img src="images/dancing.gif" class="dancing-image" alt="Dancing A GIF">
-        <img src="images/dancing.gif" class="dancing-image" alt="Dancing A GIF">
-        <img src="images/dancing.gif" class="dancing-image" alt="Dancing A GIF">
-        <img src="images/dancing.gif" class="dancing-image" alt="Dancing A GIF">
-        <img src="images/dancing.gif" class="dancing-image" alt="Dancing A GIF">
+        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
+        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
+        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
+        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
+        <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
     </div>
 </body>
 </html>
