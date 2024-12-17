@@ -45,6 +45,28 @@
             margin-right: 20px;
             background-color: transparent;
         }
+        .dropdown-container {
+            position: absolute;
+            top: 75%;
+            width: 100%;
+            text-align: center;
+        }
+        .dropdown {
+            font-family: 'Badeen Display', Arial, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #f5f5dc; /* Creme */
+            border: none;
+            border-radius: 5px;
+            color: #000033; /* Darker blue */
+            cursor: pointer;
+        }
+        .dropdown-title {
+            font-family: 'Badeen Display', Arial, sans-serif;
+            font-size: 24px;
+            color: #f5f5dc;
+            margin-bottom: 10px;
+        }
         @keyframes move-across {
             from {
                 left: -100px;
@@ -66,6 +88,15 @@
         <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
         <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
         <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
+    </div>
+
+    <!-- Dropdown -->
+    <div class="dropdown-container">
+        <div class="dropdown-title">GPA Format</div>
+        <select class="dropdown" id="gpa-type">
+            <option value="unweighted">Unweighted</option>
+            <option value="weighted">Weighted</option>
+        </select>
     </div>
 </body>
 </html>
