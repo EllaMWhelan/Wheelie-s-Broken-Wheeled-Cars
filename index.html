@@ -50,6 +50,9 @@
             top: 75%;
             width: 100%;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         .dropdown {
             font-family: 'Badeen Display', Arial, sans-serif;
@@ -66,6 +69,7 @@
             font-size: 24px;
             color: #f5f5dc;
             margin-bottom: 10px;
+            text-align: center;
         }
         @keyframes move-across {
             from {
@@ -90,13 +94,28 @@
         <img src="https://media.tenor.com/YTjJFAEDIvAAAAAM/a-dancing-dancing-a.gif" class="dancing-image" alt="Dancing GIF">
     </div>
 
-    <!-- Dropdown -->
+    <!-- Dropdowns -->
     <div class="dropdown-container">
-        <div class="dropdown-title">GPA Format</div>
-        <select class="dropdown" id="gpa-type">
-            <option value="unweighted">Unweighted</option>
-            <option value="weighted">Weighted</option>
-        </select>
+        <div>
+            <div class="dropdown-title">GPA Format</div>
+            <select class="dropdown" id="gpa-type">
+                <option value="unweighted">Unweighted</option>
+                <option value="weighted">Weighted</option>
+            </select>
+        </div>
+        <div>
+            <div class="dropdown-title">Number of Classes</div>
+            <select class="dropdown" id="class-count">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
     </div>
 </body>
 </html>
